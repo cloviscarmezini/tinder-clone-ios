@@ -132,10 +132,10 @@ class MatchViewController: UIViewController {
             if let duration = notification.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? Double {
                 UIView.animate(withDuration: duration) {
                     self.view.frame = CGRect(
-                        x: self.view.frame.origin.x,
-                        y: self.view.frame.origin.y,
-                        width: self.view.frame.width,
-                        height: self.view.frame.height - keyboardSize.height
+                        x: UIScreen.main.bounds.origin.x,
+                        y: UIScreen.main.bounds.origin.y,
+                        width: UIScreen.main.bounds.width,
+                        height: UIScreen.main.bounds.height - keyboardSize.height
                     )
                     
                     self.view.layoutIfNeeded()
