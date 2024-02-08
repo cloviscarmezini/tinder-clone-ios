@@ -37,14 +37,19 @@ class CombineViewController: UIViewController {
         
         self.fetchUsers()
         
-        self.makeCards()
-        
         self.addHeader()
         self.addFooter()
     }
     
     func fetchUsers() {
-        self.users = UserService.shared.fetchUsers()
+        UserService.shared.fetchUsers { (users, error) in
+            if let users = users {
+                DispatchQueue.main.async {
+                    self.users = users
+                    self.makeCards()
+                }
+            }
+        }
     }
 }
 
