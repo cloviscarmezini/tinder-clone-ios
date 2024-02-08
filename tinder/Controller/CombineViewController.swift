@@ -35,7 +35,7 @@ class CombineViewController: UIViewController {
         let loading = Loading(frame: view.frame)
         view.insertSubview(loading, at: 0)
         
-//        self.fetchUsers()
+        self.fetchUsers()
         
         self.makeCards()
         

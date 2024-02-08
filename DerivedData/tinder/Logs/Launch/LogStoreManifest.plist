@@ -1897,6 +1897,67 @@
 			<key>uniqueIdentifier</key>
 			<string>8FC18A91-AF34-4EC9-9B12-CA10B14752B1</string>
 		</dict>
+		<key>92F55A5A-F726-44FF-8009-417EC13F108A</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>3EEBBA97-D7B1-405B-B40E-72B87EAEF0FA</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>1</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-tinder-2024.02.07_21-14-53--0300.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>1</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>tinder project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>tinder</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run tinder</string>
+			<key>timeStartedRecording</key>
+			<real>729044093.13001502</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run tinder</string>
+			<key>uniqueIdentifier</key>
+			<string>92F55A5A-F726-44FF-8009-417EC13F108A</string>
+		</dict>
 		<key>9567F88A-3E3F-48D3-B748-0DD8586E7B9A</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
@@ -2140,6 +2201,67 @@
 			<string>Run tinder</string>
 			<key>uniqueIdentifier</key>
 			<string>A0BD2A6B-7D51-4335-8ABB-8A893989AEEE</string>
+		</dict>
+		<key>A3EDB3F8-AC05-4B8A-AD3B-4052A57856F2</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>B60E236B-C7C5-4C58-8EAE-EC6AE3A61F3F</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>1</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-tinder-2024.02.07_21-20-21--0300.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>1</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>tinder project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>tinder</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run tinder</string>
+			<key>timeStartedRecording</key>
+			<real>729044421.21825194</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run tinder</string>
+			<key>uniqueIdentifier</key>
+			<string>A3EDB3F8-AC05-4B8A-AD3B-4052A57856F2</string>
 		</dict>
 		<key>A4E831FC-CDA8-4DBD-AAAB-7D3348743345</key>
 		<dict>

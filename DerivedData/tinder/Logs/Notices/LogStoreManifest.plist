@@ -1626,6 +1626,78 @@
 			<key>uniqueIdentifier</key>
 			<string>3E43C3AC-FE5E-41E7-99DC-0C62D67CBA46</string>
 		</dict>
+		<key>3F8FD70D-6573-436E-846F-A0D056DD5146</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>3F8FD70D-6573-436E-846F-A0D056DD5146.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>signature</key>
+			<string>eyJibHVlcHJpbnRQcm92aWRlcl9wcm92aWRlckZpbGVQYXRoU3RyaW5nIjoiXC9Vc2Vyc1wvY2xvdmlzY2FybWV6aW5pXC90aW5kZXJcL3RpbmRlci54Y29kZXByb2oiLCJ0eXBlIjp7ImJsdWVwcmludFByb3ZpZGVyIjp7fX19</string>
+			<key>timeStartedRecording</key>
+			<real>729044427.91867304</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build tinder</string>
+			<key>uniqueIdentifier</key>
+			<string>3F8FD70D-6573-436E-846F-A0D056DD5146</string>
+		</dict>
+		<key>40D5DC5A-306F-47B9-A616-6A101567134C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>40D5DC5A-306F-47B9-A616-6A101567134C.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>1</integer>
+			</dict>
+			<key>signature</key>
+			<string>eyJibHVlcHJpbnRfYmx1ZXByaW50SWRlbnRpZmllciI6IjYxNzhCMjQ5MjlFRjcwNzgwMDg1MDA1OCIsImJsdWVwcmludF9wcm92aWRlckZpbGVQYXRoU3RyaW5nIjoiXC9Vc2Vyc1wvY2xvdmlzY2FybWV6aW5pXC90aW5kZXJcL3RpbmRlci54Y29kZXByb2oiLCJ0eXBlIjp7ImJsdWVwcmludCI6e319fQ==</string>
+			<key>timeStartedRecording</key>
+			<real>729044427.91867304</real>
+			<key>timeStoppedRecording</key>
+			<real>729044428.08837795</real>
+			<key>title</key>
+			<string>Build tinder</string>
+			<key>uniqueIdentifier</key>
+			<string>40D5DC5A-306F-47B9-A616-6A101567134C</string>
+		</dict>
 		<key>40F30079-E607-4EE3-B5EB-79A05700F8C7</key>
 		<dict>
 			<key>className</key>
@@ -2202,6 +2274,42 @@
 			<key>uniqueIdentifier</key>
 			<string>600F9AF3-3CF6-4AF1-9862-DEF2905295BE</string>
 		</dict>
+		<key>60450AAD-24D3-4F7F-A9A4-E4E06807E10F</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>60450AAD-24D3-4F7F-A9A4-E4E06807E10F.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>signature</key>
+			<string>eyJidWlsZFN5c3RlbVRhc2tfYnVpbGRUYXNrIjoiUHJlcGFyZSBidWlsZCIsInR5cGUiOnsiYnVpbGRTeXN0ZW1UYXNrIjp7fX19</string>
+			<key>timeStartedRecording</key>
+			<real>729044427.91867304</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build tinder</string>
+			<key>uniqueIdentifier</key>
+			<string>60450AAD-24D3-4F7F-A9A4-E4E06807E10F</string>
+		</dict>
 		<key>62876A58-6F22-4A8A-8EDF-7BA9EAA57518</key>
 		<dict>
 			<key>className</key>
@@ -2705,6 +2813,42 @@
 			<string>Build tinder</string>
 			<key>uniqueIdentifier</key>
 			<string>71BC9F97-8008-4E63-A957-3EBB218340C4</string>
+		</dict>
+		<key>72F56503-DBD8-4AD7-BD23-BD83B3AB9AEE</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>72F56503-DBD8-4AD7-BD23-BD83B3AB9AEE.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>signature</key>
+			<string>eyJidWlsZFN5c3RlbVRhc2tfYnVpbGRUYXNrIjoiUHJlcGFyZSBidWlsZCIsInR5cGUiOnsiYnVpbGRTeXN0ZW1UYXNrIjp7fX19</string>
+			<key>timeStartedRecording</key>
+			<real>729044421.21840799</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build tinder</string>
+			<key>uniqueIdentifier</key>
+			<string>72F56503-DBD8-4AD7-BD23-BD83B3AB9AEE</string>
 		</dict>
 		<key>76105A06-91C5-4DDD-809C-7B8747ED944A</key>
 		<dict>
@@ -5586,6 +5730,42 @@
 			<key>uniqueIdentifier</key>
 			<string>ECC6F9CC-99AD-436C-8494-000E177641FC</string>
 		</dict>
+		<key>ED66C48D-B8ED-4C49-8C49-60467E399CB9</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>ED66C48D-B8ED-4C49-8C49-60467E399CB9.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>signature</key>
+			<string>eyJibHVlcHJpbnRQcm92aWRlcl9wcm92aWRlckZpbGVQYXRoU3RyaW5nIjoiXC9Vc2Vyc1wvY2xvdmlzY2FybWV6aW5pXC90aW5kZXJcL3RpbmRlci54Y29kZXByb2oiLCJ0eXBlIjp7ImJsdWVwcmludFByb3ZpZGVyIjp7fX19</string>
+			<key>timeStartedRecording</key>
+			<real>729044421.21840799</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build tinder</string>
+			<key>uniqueIdentifier</key>
+			<string>ED66C48D-B8ED-4C49-8C49-60467E399CB9</string>
+		</dict>
 		<key>EDADB0A4-1B4D-488C-AE22-C405EDC9B66C</key>
 		<dict>
 			<key>className</key>
@@ -5657,6 +5837,42 @@
 			<string>Build tinder</string>
 			<key>uniqueIdentifier</key>
 			<string>F3156230-FF81-46C0-BF39-BA5706AC12E9</string>
+		</dict>
+		<key>F3579004-1825-490A-BC27-AAA1E961B3D1</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F3579004-1825-490A-BC27-AAA1E961B3D1.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>1</integer>
+			</dict>
+			<key>signature</key>
+			<string>eyJibHVlcHJpbnRfYmx1ZXByaW50SWRlbnRpZmllciI6IjYxNzhCMjQ5MjlFRjcwNzgwMDg1MDA1OCIsImJsdWVwcmludF9wcm92aWRlckZpbGVQYXRoU3RyaW5nIjoiXC9Vc2Vyc1wvY2xvdmlzY2FybWV6aW5pXC90aW5kZXJcL3RpbmRlci54Y29kZXByb2oiLCJ0eXBlIjp7ImJsdWVwcmludCI6e319fQ==</string>
+			<key>timeStartedRecording</key>
+			<real>729044421.21840799</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build tinder</string>
+			<key>uniqueIdentifier</key>
+			<string>F3579004-1825-490A-BC27-AAA1E961B3D1</string>
 		</dict>
 		<key>F540F3D7-834F-47E3-83E0-5311C494B4C8</key>
 		<dict>
