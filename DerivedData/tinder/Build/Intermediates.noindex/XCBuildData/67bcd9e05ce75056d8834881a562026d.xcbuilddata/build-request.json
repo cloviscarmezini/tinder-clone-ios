@@ -1,0 +1,65 @@
+{
+  "buildCommand" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildAndRun"
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "a7301dd255c6b9f8ff79e250a64bb6688660794d069cb3c6aeb495d01f5e325e"
+    }
+  ],
+  "containerPath" : "/Users/cloviscarmezini/tinder/tinder.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "iphoneos",
+      "sdk" : "iphoneos17.0",
+      "sdkVariant" : "iphoneos",
+      "supportedArchitectures" : [
+        "arm64e",
+        "arm64v8",
+        "arm64",
+        "armv8"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/cloviscarmezini/tinder/DerivedData/tinder/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/cloviscarmezini/tinder/DerivedData/tinder/Build/Products",
+      "derivedDataPath" : "/Users/cloviscarmezini/tinder/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/cloviscarmezini/tinder/DerivedData/tinder/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/cloviscarmezini/tinder/DerivedData/tinder/Index.noindex/PrecompiledHeaders",
+      "pchPath" : "/Users/cloviscarmezini/tinder/DerivedData/tinder/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ASSETCATALOG_FILTER_FOR_DEVICE_MODEL" : "iPhone15,2",
+          "ASSETCATALOG_FILTER_FOR_DEVICE_OS_VERSION" : "17.3",
+          "ASSETCATALOG_FILTER_FOR_THINNING_DEVICE_CONFIGURATION" : "iPhone15,2",
+          "BUILD_ACTIVE_RESOURCES_ONLY" : "YES",
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "NO",
+          "TARGET_DEVICE_IDENTIFIER" : "00008120-001954311188C01E",
+          "TARGET_DEVICE_MODEL" : "iPhone15,2",
+          "TARGET_DEVICE_OS_VERSION" : "17.3",
+          "TARGET_DEVICE_PLATFORM_NAME" : "iphoneos"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}
