@@ -123,6 +123,7 @@ extension CombineViewController {
             
             let matchViewController = MatchViewController()
             matchViewController.modalPresentationStyle = .fullScreen
+            matchViewController.user = user
             
             self.present(matchViewController, animated: true, completion: nil)
         }

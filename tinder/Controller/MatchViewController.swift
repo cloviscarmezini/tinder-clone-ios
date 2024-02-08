@@ -8,7 +8,17 @@
 import UIKit
 
 class MatchViewController: UIViewController {
-    let photoView: UIImageView = .imageView(named: "pessoa-1")
+    
+    var user: User? {
+        didSet {
+            if let user = user {
+                labelMessage.text = "\(user.name) curtiu você também!"
+                photoView.image = UIImage(named: user.photo)
+            }
+        }
+    }
+    
+    let photoView: UIImageView = .imageView()
     let likeImageView: UIImageView = .imageView(named: "icone-like")
     let labelMessage: UILabel = .textBoldLabel(18, color: .white, numberOfLines: 1)
     
@@ -65,7 +75,6 @@ class MatchViewController: UIViewController {
         
         photoView.layer.addSublayer(gradient)
         
-        labelMessage.text = "Ana curtiu você também!"
         labelMessage.textAlignment = .center
         
         backButton.addTarget(self, action: #selector(handleGoBack), for: .touchUpInside)
