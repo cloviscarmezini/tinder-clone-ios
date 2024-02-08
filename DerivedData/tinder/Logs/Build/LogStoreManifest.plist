@@ -1182,6 +1182,48 @@
 			<key>uniqueIdentifier</key>
 			<string>73F79D91-9778-4C76-AE10-78368986ED00</string>
 		</dict>
+		<key>759D025A-9179-4C26-889C-BD87A6FEDA78</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>759D025A-9179-4C26-889C-BD87A6FEDA78.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>1</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>tinder project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>tinder</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build tinder</string>
+			<key>timeStartedRecording</key>
+			<real>729044680.22508097</real>
+			<key>timeStoppedRecording</key>
+			<real>729044680.26911998</real>
+			<key>title</key>
+			<string>Build tinder</string>
+			<key>uniqueIdentifier</key>
+			<string>759D025A-9179-4C26-889C-BD87A6FEDA78</string>
+		</dict>
 		<key>777B6A60-9D9E-4FCB-A907-EDAB83109178</key>
 		<dict>
 			<key>className</key>

@@ -250,6 +250,67 @@
 			<key>uniqueIdentifier</key>
 			<string>1BC9ACFC-8369-482E-8E42-390BF8392F82</string>
 		</dict>
+		<key>25FFA572-F8C3-4252-B602-C50DDFAD7E77</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>6672CF93-6A43-4ADE-A5EF-81981E38AA16</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>1</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-tinder-2024.02.07_21-20-27--0300.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>1</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>tinder project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>tinder</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run tinder</string>
+			<key>timeStartedRecording</key>
+			<real>729044427.918558</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run tinder</string>
+			<key>uniqueIdentifier</key>
+			<string>25FFA572-F8C3-4252-B602-C50DDFAD7E77</string>
+		</dict>
 		<key>2A944019-8DAD-4A38-BFC8-7D138EAE94D6</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
