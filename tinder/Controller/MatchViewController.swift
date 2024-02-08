@@ -68,6 +68,8 @@ class MatchViewController: UIViewController {
         labelMessage.text = "Ana curtiu você também!"
         labelMessage.textAlignment = .center
         
+        backButton.addTarget(self, action: #selector(handleGoBack), for: .touchUpInside)
+        
         likeImageView.translatesAutoresizingMaskIntoConstraints = false
         likeImageView.heightAnchor.constraint(equalToConstant: 44).isActive = true
         likeImageView.contentMode = .scaleAspectFit
@@ -93,5 +95,9 @@ class MatchViewController: UIViewController {
             bottom: view.bottomAnchor,
             padding: .init(top: 0, left: 32, bottom: 46, right: 32)
         )
+    }
+    
+    @objc func handleGoBack() {
+        self.dismiss(animated: true, completion: nil)
     }
 }
