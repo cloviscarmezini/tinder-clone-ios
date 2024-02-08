@@ -120,6 +120,11 @@ extension CombineViewController {
     func verifyMatch(user: User) {
         if user.match {
             print("match")
+            
+            let matchViewController = MatchViewController()
+            matchViewController.modalPresentationStyle = .fullScreen
+            
+            self.present(matchViewController, animated: true, completion: nil)
         }
     }
 }
