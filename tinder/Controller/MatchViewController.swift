@@ -65,6 +65,9 @@ class MatchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+        
         view.addSubview(photoView)
         
         photoView.fillSuperview()
@@ -106,7 +109,38 @@ class MatchViewController: UIViewController {
         )
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+    
     @objc func handleGoBack() {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    @objc func keyboardHide(notification: NSNotification) {
+        if let duration = notification.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? Double {
+            UIView.animate(withDuration: duration) {
+                self.view.frame = UIScreen.main.bounds
+                
+                self.view.layoutIfNeeded()
+            }
+        }
+    }
+    
+    @objc func keyboardShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            if let duration = notification.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? Double {
+                UIView.animate(withDuration: duration) {
+                    self.view.frame = CGRect(
+                        x: self.view.frame.origin.x,
+                        y: self.view.frame.origin.y,
+                        width: self.view.frame.width,
+                        height: self.view.frame.height - keyboardSize.height
+                    )
+                    
+                    self.view.layoutIfNeeded()
+                }
+            }
+        }
     }
 }
