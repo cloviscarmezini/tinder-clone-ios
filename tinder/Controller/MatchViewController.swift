@@ -59,6 +59,12 @@ class MatchViewController: UIViewController {
         
         photoView.fillSuperview()
         
+        let gradient = CAGradientLayer()
+        gradient.frame = view.frame
+        gradient.colors = [UIColor.clear.cgColor, UIColor.clear.cgColor, UIColor.black.cgColor]
+        
+        photoView.layer.addSublayer(gradient)
+        
         labelMessage.text = "Ana curtiu você também!"
         labelMessage.textAlignment = .center
         
