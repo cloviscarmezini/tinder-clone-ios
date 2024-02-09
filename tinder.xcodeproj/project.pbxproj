@@ -17,6 +17,10 @@
 		6195D3C12B745D1900402A91 /* MatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6195D3C02B745D1900402A91 /* MatchViewController.swift */; };
 		61A4CE2C2B75B17C00D98E66 /* MatchUserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A4CE2B2B75B17C00D98E66 /* MatchUserProfileViewController.swift */; };
 		61A4CE2E2B75BB3900D98E66 /* MatchUserProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A4CE2D2B75BB3900D98E66 /* MatchUserProfileHeader.swift */; };
+		61A4CE302B75BF7600D98E66 /* MatchUserDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A4CE2F2B75BF7600D98E66 /* MatchUserDetailsCell.swift */; };
+		61A4CE322B75C5FA00D98E66 /* GalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A4CE312B75C5FA00D98E66 /* GalleryCell.swift */; };
+		61A4CE342B75C84800D98E66 /* PhotoSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A4CE332B75C84800D98E66 /* PhotoSliderViewController.swift */; };
+		61A4CE362B75CCF000D98E66 /* SlideItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A4CE352B75CCF000D98E66 /* SlideItemCell.swift */; };
 		61D0B8B92B730501002E787E /* CombineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D0B8B82B730501002E787E /* CombineViewController.swift */; };
 		61D0B8BC2B730E14002E787E /* CombineCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D0B8BB2B730E14002E787E /* CombineCardView.swift */; };
 		61D0B8BF2B7311E1002E787E /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D0B8BE2B7311E1002E787E /* UIView.swift */; };
@@ -40,6 +44,10 @@
 		6195D3C02B745D1900402A91 /* MatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchViewController.swift; sourceTree = "<group>"; };
 		61A4CE2B2B75B17C00D98E66 /* MatchUserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchUserProfileViewController.swift; sourceTree = "<group>"; };
 		61A4CE2D2B75BB3900D98E66 /* MatchUserProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchUserProfileHeader.swift; sourceTree = "<group>"; };
+		61A4CE2F2B75BF7600D98E66 /* MatchUserDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchUserDetailsCell.swift; sourceTree = "<group>"; };
+		61A4CE312B75C5FA00D98E66 /* GalleryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCell.swift; sourceTree = "<group>"; };
+		61A4CE332B75C84800D98E66 /* PhotoSliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSliderViewController.swift; sourceTree = "<group>"; };
+		61A4CE352B75CCF000D98E66 /* SlideItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideItemCell.swift; sourceTree = "<group>"; };
 		61D0B8B82B730501002E787E /* CombineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineViewController.swift; sourceTree = "<group>"; };
 		61D0B8BB2B730E14002E787E /* CombineCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineCardView.swift; sourceTree = "<group>"; };
 		61D0B8BE2B7311E1002E787E /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
@@ -102,6 +110,7 @@
 				61D0B8B82B730501002E787E /* CombineViewController.swift */,
 				6195D3C02B745D1900402A91 /* MatchViewController.swift */,
 				61A4CE2B2B75B17C00D98E66 /* MatchUserProfileViewController.swift */,
+				61A4CE332B75C84800D98E66 /* PhotoSliderViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -112,6 +121,9 @@
 				61D0B8BB2B730E14002E787E /* CombineCardView.swift */,
 				6195D3BE2B744FD500402A91 /* Loading.swift */,
 				61A4CE2D2B75BB3900D98E66 /* MatchUserProfileHeader.swift */,
+				61A4CE2F2B75BF7600D98E66 /* MatchUserDetailsCell.swift */,
+				61A4CE312B75C5FA00D98E66 /* GalleryCell.swift */,
+				61A4CE352B75CCF000D98E66 /* SlideItemCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -218,16 +230,20 @@
 				6195D3C12B745D1900402A91 /* MatchViewController.swift in Sources */,
 				61D0B8CA2B73253A002E787E /* UIImage.swift in Sources */,
 				6178B24E29EF707800850058 /* AppDelegate.swift in Sources */,
+				61A4CE362B75CCF000D98E66 /* SlideItemCell.swift in Sources */,
 				61D0B8C82B731AE1002E787E /* UserService.swift in Sources */,
 				61D0B8C12B7314D6002E787E /* UILabel.swift in Sources */,
 				61D0B8BC2B730E14002E787E /* CombineCardView.swift in Sources */,
+				61A4CE302B75BF7600D98E66 /* MatchUserDetailsCell.swift in Sources */,
 				61A4CE2C2B75B17C00D98E66 /* MatchUserProfileViewController.swift in Sources */,
 				61D0B8C42B7319F7002E787E /* User.swift in Sources */,
 				61D0B8B92B730501002E787E /* CombineViewController.swift in Sources */,
 				61D0B8CC2B732D3F002E787E /* UIButton.swift in Sources */,
 				61D0B8BF2B7311E1002E787E /* UIView.swift in Sources */,
+				61A4CE322B75C5FA00D98E66 /* GalleryCell.swift in Sources */,
 				6195D3BF2B744FD500402A91 /* Loading.swift in Sources */,
 				61A4CE2E2B75BB3900D98E66 /* MatchUserProfileHeader.swift in Sources */,
+				61A4CE342B75C84800D98E66 /* PhotoSliderViewController.swift in Sources */,
 				6178B25029EF707800850058 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

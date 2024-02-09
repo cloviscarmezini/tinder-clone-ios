@@ -137,6 +137,8 @@ extension CombineViewController {
         let userProfileViewController = MatchUserProfileViewController()
         userProfileViewController.modalPresentationStyle = .fullScreen
         
+        userProfileViewController.user = user
+        
         self.present(userProfileViewController, animated: true, completion: nil)
     }
 }

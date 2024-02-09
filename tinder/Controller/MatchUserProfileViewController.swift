@@ -36,8 +36,17 @@ class HeaderLayout: UICollectionViewFlowLayout {
 
 class MatchUserProfileViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
+    var user: User? {
+        didSet {
+            self.collectionView.reloadData()
+        }
+    }
+    
+    
     let cellId = "cellId"
     let headerId = "headerId"
+    let profileId = "profileId"
+    let galleryId = "galleryId"
     
     init() {
         super.init(collectionViewLayout: HeaderLayout())
@@ -52,18 +61,21 @@ class MatchUserProfileViewController: UICollectionViewController, UICollectionVi
         
         collectionView.contentInsetAdjustmentBehavior = .never
         
-        collectionView.backgroundColor = .blue
+        collectionView.backgroundColor = .white
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: cellId)
         
         collectionView.register(MatchUserProfileHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerId)
+        collectionView.register(MatchUserDetailsCell.self, forCellWithReuseIdentifier: profileId)
+        collectionView.register(GalleryCell.self, forCellWithReuseIdentifier: galleryId)
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return 2
     }
     
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerId, for: indexPath) as! MatchUserProfileHeader
+        header.user = self.user
         return header
     }
     
@@ -72,12 +84,32 @@ class MatchUserProfileViewController: UICollectionViewController, UICollectionVi
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath)
-        cell.backgroundColor = .red
+        if indexPath.item == 0 {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: profileId, for: indexPath) as! MatchUserDetailsCell
+            
+            cell.user = self.user
+            
+            return cell
+        }
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: galleryId, for: indexPath)
+        
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.bounds.width, height: 100)
+        var height: CGFloat = UIScreen.main.bounds.width * 0.66
+        let width: CGFloat = UIScreen.main.bounds.width
+        
+        if indexPath.item == 0 {
+            let cell = MatchUserDetailsCell(frame: CGRect(x: 0, y: 0, width: width, height: height))
+            cell.user = self.user
+            cell.layoutIfNeeded()
+            
+            let estimatedSize = cell.systemLayoutSizeFitting(CGSize(width: width, height: 1000))
+            height = estimatedSize.height
+        }
+        
+        return .init(width: width, height: height)
     }
 }

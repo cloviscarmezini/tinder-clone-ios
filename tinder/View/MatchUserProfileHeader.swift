@@ -8,7 +8,17 @@
 import UIKit
 
 class MatchUserProfileHeader: UICollectionReusableView {
-    var photoView: UIImageView = .imageView(named: "pessoa-1")
+    
+    var user: User? {
+        didSet {
+            if let user = user {
+                photoView.image = UIImage(named: user.photo)
+                
+            }
+        }
+    }
+    
+    var photoView: UIImageView = .imageView()
     
     override init(frame: CGRect) {
         super .init(frame: frame)
