@@ -103,6 +103,10 @@ extension CombineViewController {
             
             card.center = view.center
             
+            card.callback = {(user) in
+                self.viewProfile(user: user)
+            }
+            
             let gesture = UIPanGestureRecognizer()
             gesture.addTarget(self, action: #selector(cardHandler))
             
@@ -127,6 +131,14 @@ extension CombineViewController {
             
             self.present(matchViewController, animated: true, completion: nil)
         }
+    }
+    
+    func viewProfile(user: User) {
+        let userProfileViewController = UIViewController()
+        userProfileViewController.view.backgroundColor = .red
+        userProfileViewController.modalPresentationStyle = .fullScreen
+        
+        self.present(userProfileViewController, animated: true, completion: nil)
     }
 }
 
