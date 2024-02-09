@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MatchViewController: UIViewController {
+class MatchViewController: UIViewController, UITextFieldDelegate {
     
     var user: User? {
         didSet {
@@ -78,6 +78,8 @@ class MatchViewController: UIViewController {
         
         photoView.layer.addSublayer(gradient)
         
+        messageInput.delegate = self
+        
         labelMessage.textAlignment = .center
         
         backButton.addTarget(self, action: #selector(handleGoBack), for: .touchUpInside)
@@ -94,6 +96,8 @@ class MatchViewController: UIViewController {
             bottom: messageInput.bottomAnchor,
             padding: .init(top: 0, left: 0, bottom: 0, right: 16)
         )
+        
+        submitButton.addTarget(self, action: #selector(handleSendMessage), for: .touchUpInside)
         
         let stackView = UIStackView(arrangedSubviews: [likeImageView, labelMessage, messageInput, backButton])
         stackView.axis = .vertical
@@ -113,8 +117,20 @@ class MatchViewController: UIViewController {
         view.endEditing(true)
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.handleSendMessage()
+        
+        return true
+    }
+
     @objc func handleGoBack() {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    @objc func handleSendMessage() {
+        if let message = self.messageInput.text {
+            print(message)
+        }
     }
     
     @objc func keyboardHide(notification: NSNotification) {
