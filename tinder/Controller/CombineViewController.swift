@@ -134,8 +134,7 @@ extension CombineViewController {
     }
     
     func viewProfile(user: User) {
-        let userProfileViewController = UIViewController()
-        userProfileViewController.view.backgroundColor = .red
+        let userProfileViewController = MatchUserProfileViewController()
         userProfileViewController.modalPresentationStyle = .fullScreen
         
         self.present(userProfileViewController, animated: true, completion: nil)

@@ -15,6 +15,7 @@
 		6178B25A29EF707900850058 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6178B25829EF707900850058 /* LaunchScreen.storyboard */; };
 		6195D3BF2B744FD500402A91 /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6195D3BE2B744FD500402A91 /* Loading.swift */; };
 		6195D3C12B745D1900402A91 /* MatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6195D3C02B745D1900402A91 /* MatchViewController.swift */; };
+		61A4CE2C2B75B17C00D98E66 /* MatchUserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A4CE2B2B75B17C00D98E66 /* MatchUserProfileViewController.swift */; };
 		61D0B8B92B730501002E787E /* CombineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D0B8B82B730501002E787E /* CombineViewController.swift */; };
 		61D0B8BC2B730E14002E787E /* CombineCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D0B8BB2B730E14002E787E /* CombineCardView.swift */; };
 		61D0B8BF2B7311E1002E787E /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D0B8BE2B7311E1002E787E /* UIView.swift */; };
@@ -36,6 +37,7 @@
 		6178B25B29EF707900850058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6195D3BE2B744FD500402A91 /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
 		6195D3C02B745D1900402A91 /* MatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchViewController.swift; sourceTree = "<group>"; };
+		61A4CE2B2B75B17C00D98E66 /* MatchUserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchUserProfileViewController.swift; sourceTree = "<group>"; };
 		61D0B8B82B730501002E787E /* CombineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineViewController.swift; sourceTree = "<group>"; };
 		61D0B8BB2B730E14002E787E /* CombineCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineCardView.swift; sourceTree = "<group>"; };
 		61D0B8BE2B7311E1002E787E /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			children = (
 				61D0B8B82B730501002E787E /* CombineViewController.swift */,
 				6195D3C02B745D1900402A91 /* MatchViewController.swift */,
+				61A4CE2B2B75B17C00D98E66 /* MatchUserProfileViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				61D0B8C82B731AE1002E787E /* UserService.swift in Sources */,
 				61D0B8C12B7314D6002E787E /* UILabel.swift in Sources */,
 				61D0B8BC2B730E14002E787E /* CombineCardView.swift in Sources */,
+				61A4CE2C2B75B17C00D98E66 /* MatchUserProfileViewController.swift in Sources */,
 				61D0B8C42B7319F7002E787E /* User.swift in Sources */,
 				61D0B8B92B730501002E787E /* CombineViewController.swift in Sources */,
 				61D0B8CC2B732D3F002E787E /* UIButton.swift in Sources */,
