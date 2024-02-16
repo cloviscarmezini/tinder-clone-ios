@@ -30,7 +30,7 @@ class CombineViewController: UIViewController {
         
         navigationController?.navigationBar.isHidden = true
         
-        view.backgroundColor = UIColor.systemGroupedBackground
+        view.backgroundColor = .white//UIColor.systemGroupedBackground
         
         let loading = Loading(frame: view.frame)
         view.insertSubview(loading, at: 0)
@@ -139,6 +139,17 @@ extension CombineViewController {
         
         userProfileViewController.user = user
         
+        userProfileViewController.callback = { (user, action) in
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                if(action == CardAction.dislike) {
+                    self.onPressDislike()
+                } else {
+                    self.onPressLike()
+                }
+            }
+            
+        }
+        
         self.present(userProfileViewController, animated: true, completion: nil)
     }
 }
@@ -165,12 +176,12 @@ extension CombineViewController {
             
             if gesture.state == .ended {
                 
-                if card.center.x > self.view.bounds.width + 50 {
+                if card.center.x > self.view.bounds.width - 50 {
                     self.animatedCard(rotationAngle: rotationAngle, action: CardAction.like)
                     return
                 }
                 
-                if card.center.x < -50 {
+                if card.center.x < 50    {
                     self.animatedCard(rotationAngle: rotationAngle, action: CardAction.dislike)
                     return
                 }

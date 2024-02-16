@@ -48,6 +48,21 @@ class MatchUserProfileViewController: UICollectionViewController, UICollectionVi
     let profileId = "profileId"
     let galleryId = "galleryId"
     
+    var dislikeButton: UIButton = .iconFooter(named: "icone-deslike")
+    var likeButton: UIButton = .iconFooter(named: "icone-like")
+    
+    var goBackButton: UIButton = {
+        let button = UIButton()
+        
+        button.setImage(UIImage(named: "icone-down"), for: .normal)
+        button.backgroundColor = UIColor(red: 232/255, green: 88/255, blue: 54/255, alpha: 1)
+        button.clipsToBounds = true
+        
+        return button
+    }() 
+    
+    var callback: ((User?, CardAction) -> Void)?
+    
     init() {
         super.init(collectionViewLayout: HeaderLayout())
     }
@@ -60,6 +75,7 @@ class MatchUserProfileViewController: UICollectionViewController, UICollectionVi
         super.viewDidLoad()
         
         collectionView.contentInsetAdjustmentBehavior = .never
+        collectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 134, right: 0)
         
         collectionView.backgroundColor = .white
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: cellId)
@@ -67,6 +83,39 @@ class MatchUserProfileViewController: UICollectionViewController, UICollectionVi
         collectionView.register(MatchUserProfileHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerId)
         collectionView.register(MatchUserDetailsCell.self, forCellWithReuseIdentifier: profileId)
         collectionView.register(GalleryCell.self, forCellWithReuseIdentifier: galleryId)
+        
+        self.addGoBackButton()
+        self.addFooter()
+    }
+    
+    func addGoBackButton() {
+        view.addSubview(goBackButton)
+        goBackButton.frame = CGRect(
+            x: UIScreen.main.bounds.width - 69,
+            y: UIScreen.main.bounds.height * 0.7 - 24,
+            width: 48,
+            height: 48
+        )
+        goBackButton.layer.cornerRadius = 24
+        goBackButton.addTarget(self, action: #selector(onGoBack), for: .touchUpInside)
+    }
+    
+    func addFooter() {
+        let stackView = UIStackView(arrangedSubviews: [UIStackView(), dislikeButton, likeButton, UIStackView()])
+        stackView.distribution = .equalCentering
+        
+        view.addSubview(stackView)
+        
+        stackView.fill(
+            top: nil,
+            leading: view.leadingAnchor,
+            trailing: view.trailingAnchor,
+            bottom: view.bottomAnchor,
+            padding: .init(top: 0, left: 16, bottom: 34, right: 16)
+        )
+        
+        dislikeButton.addTarget(self, action: #selector(onPressDislike), for: .touchUpInside)
+        likeButton.addTarget(self, action: #selector(onPressLike), for: .touchUpInside)
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -111,5 +160,24 @@ class MatchUserProfileViewController: UICollectionViewController, UICollectionVi
         }
         
         return .init(width: width, height: height)
+    }
+    
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let originY = view.bounds.height * 0.7 - 24
+        self.goBackButton.frame.origin.y = originY - scrollView.contentOffset.y
+    }
+    
+    @objc func onGoBack() {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @objc func onPressDislike() {
+        self.callback?(self.user, CardAction.dislike)
+        self.onGoBack()
+    }
+    
+    @objc func onPressLike() {
+        self.callback?(self.user, CardAction.like)
+        self.onGoBack()
     }
 }

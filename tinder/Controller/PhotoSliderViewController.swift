@@ -36,6 +36,8 @@ class PhotoSliderViewController: UICollectionViewController, UICollectionViewDel
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        collectionView.backgroundColor = .white
+        
         collectionView.register(SlideItemCell.self, forCellWithReuseIdentifier: cellId)
     }
     
